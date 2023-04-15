@@ -1,0 +1,31 @@
+[
+
+    {
+        "nome": "Adriana",
+        "sobrenome": "Lombardi",
+        "empresa": "ALiExpress",
+        "pais": "Brasil",
+        "rua": "Santa Luzia",
+        "numero": "400",
+        "cidade": "Uberlandia",
+        "estado": "São Paulo",
+        "cep": "02555-000",
+        "telefone": "11 99999-9999",
+        "email": "dricalombardi@gmail.com"
+    },
+
+    {
+        "nome": "Marcelo",
+        "sobrenome": "Silva",
+        "empresa": "SIlveira Martins",
+        "pais": "Brasil",
+        "rua": "Limoeiro",
+        "numero": "4",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "40070-010",
+        "telefone": "11 99999-9999",
+        "email": "celilva@hotmail.com"
+    }
+
+]
