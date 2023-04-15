@@ -23,6 +23,9 @@ describe('funcionalidade página de produtos', () => {
         .click()
         cy.get('.single_add_to_cart_button').click()
         cy.get('.woocommerce-message').should('contain', ' foi adicionado no seu carrinho.')
-        
+    });
+
+    it('deve adicionar produtos ao carrinho - usando comando customizado', () => {
+        cy.addProduto('Thais')
     });
 });
