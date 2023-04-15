@@ -1,9 +1,18 @@
 /// <reference types="cypress" />
 
+//const { afterEach } = require("mocha");
+
 context ('funcionalidade login', () => {
 
-    it('deve fazer login com sucesso', () => {
+    beforeEach(() => {
         cy.visit('http://lojaebac.ebaconline.art.br')
+    });
+
+    afterEach(() => {
+        cy.screenshot()
+    });
+
+    it('deve fazer login com sucesso', () => {
         cy.get('.icon-user-unfollow').click()
         cy.get('#username').type('aluno_ebac@teste.com')
         cy.get('#password').type('teste@teste.com')
@@ -12,7 +21,6 @@ context ('funcionalidade login', () => {
     })
 
     it('deve exibir uma mensagem de erro ao inserir usuario invalido', () => {
-        cy.visit('http://lojaebac.ebaconline.art.br')
         cy.get('.icon-user-unfollow').click()
         cy.get('#username').type('alunoebac@teste.com')
         cy.get('#password').type('teste@teste.com')
@@ -21,7 +29,6 @@ context ('funcionalidade login', () => {
     })
 
     it('deve exibir uma mensagem de erro ao inserir senha invalida', () => {
-        cy.visit('http://lojaebac.ebaconline.art.br')
         cy.get('.icon-user-unfollow').click()
         cy.get('#username').type('aluno_ebac@teste.com')
         cy.get('#password').type('teste@teste')
